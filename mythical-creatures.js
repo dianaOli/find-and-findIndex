@@ -5,3 +5,29 @@ const mythicalCreatures = [
 	{name: "Griffin", type: "Air", lastSeen: "Highwind Mountains"},
 	{name: "Kraken", type: "Water", lastSeen: "Abyssal Depths"}
 ];
+
+
+
+
+const waterCreature = mythicalCreatures.find(function(creature){
+  return creature.type ===  "Water";
+});
+
+
+console.log(waterCreature.name)
+
+
+const griffinIndex = mythicalCreatures.findIndex(function(creature){
+  return creature.name ===  "Griffin";
+});
+
+
+console.log(griffinIndex)
+
+
+const enchantedCreature = mythicalCreatures.find(function(creature){
+  return creature.lastSeen ===  "Enchanted Forest";
+});
+
+
+console.log(enchantedCreature.name)
